@@ -1,6 +1,4 @@
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.HashMap;
+import java.util.*;
 
 public class Prison {
 
@@ -16,6 +14,10 @@ public class Prison {
         Collections.shuffle(boxes);
     }
 
+    public void shufflePrison() {
+        Collections.shuffle(boxes);
+    }
+
     public void printList() {
         System.out.println(boxes);
     }
@@ -26,6 +28,5 @@ public class Prison {
             myMap.put(k, boxes.get(k));
         }
         System.out.println(myMap);
-        
     }
 }
